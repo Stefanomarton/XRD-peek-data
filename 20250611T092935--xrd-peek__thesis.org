@@ -1,0 +1,182 @@
+#+title:      XRD peek
+#+date:       [2025-06-11 mer 09:29]
+#+filetags:   :bib:thesis:
+#+identifier: 20250611T092935
+#+LATEX_CLASS: marton
+
+
+* Informazioni disponibili
+
+[cite:@dawsonXrayDataPolyaryl1980] Prima struttura ottenuta [[denote:20250612T212345]] nel 1980. All'interno
+dell'articolo relativo alla cristallinità [cite:@doumengComparativeStudyCrystallinity2021] questo viene
+indicata come la prima indicazione della cella ortorombica, ma nell'articolo:
+
+#+begin_quote
+The reflections could be indexed, assuming orthorhombic cells of the dimensions listed in Table 1. The
+indexing of the main reflections are shown in Table 2. The degree of accuracy in all these results is limited
+by the relatively low crystallinity of these polymers which is usually less than 50%
+#+end_quote
+
+N. T. Wakelyn, Polym. Commun., 25, 306 (1984). riporta la prima cella da 3 nm ma la reference risulta
+sostanzialmente introvabile.
+
+Nel 1985 [cite:@kumarCrystallizationMorphologyPolyaryletheretherketone1986] [[denote:20250612T212718]] viene
+riportata la cella ortorombica, si menziona l'introduzione della cella doppia e si conferma la presenza di
+crescita preferenziale delle sferuliti lunog la direzione (110). In
+[cite:@doumengComparativeStudyCrystallinity2021] si indica una conferma che però risulta tuttosommato
+relativa, ne hanno fatto più un utilizzo.
+
+Nel 1986 [cite:@fratiniRefinementStructurePEEK1986] [[denote:20250612T221523]] riporta i dati di posizione
+atomiche e informazioni sulla cella per la cella con 6 unità feniliche. Dovrebbe risultare il doppio di quella
+a 3.
+
+Nel 1998 [cite:@jiVariationUnitCell1998] [[denote:20250612T215817]] viene analizzata la variazione dei parametri
+di cella con la temperatura. Vengono trattate due proposte per la dimensione di cella ma senza particolare
+attenzione. Oltretutto il paper si concentra anche sul PEDEK.
+
+Nel 2014 [cite:@jinCrystallizationBehaviorMorphological2014] [[denote:20250612T215012]] viene condotto uno studio
+approfondito e proposto un modello morfologico per il PEEK. Nell'articolo è presente un'immagine chiara. Anche
+in questo caso viene mantenuto l'utilizzo della cella contenente 2/3 dell'unità ripetitiva con una c pari a
+circa 1 nm.
+
+Nel 2019 [cite:@pisaniMultiscaleModelingPEEK2019] [[denote:20250612T220608]] si concentrano sul calcolo delle
+proprietà meccaniche a partire da modello di dinamica molecolare. Assumono la cella ortorombica con 2 molecole
+per cella unitaria e una densità calcolata di 1.415 g/cm^3.
+
+Nel 2019 [cite:@wangComparativeStudyFullerenes2019] ha confermato che non si osservano variazioni di struttura
+inserendo CF e fullerene come riempitivo. Confermato dai diffrattogrammi registrati.
+
+[cite:@doumengComparativeStudyCrystallinity2021] riporta la cella ottenuta da
+[cite:@fratiniRefinementStructurePEEK1986] con 6 unità feniliche dentro e l'unità di
+[cite:@jinCrystallizationBehaviorMorphological2014] con 3, anche se di quest'ultima non vengono riportate le
+dimensioni di cella stimate.
+
+L'aspetto critico viene ben evidenziato:
+
+#+begin_quote
+The organization of the lamella is different according to the cooling conditions. The lamellar stacks and
+individual lamellae of 10 nm when the sample crystallized isothermally at 315 ◦C and only lamellar stacks when
+the sample is cooled down to ambient temperature
+#+end_quote
+
+In generale questo viene legato al disordine di cui veniva discusso già nel
+[cite:@dawsonXrayDataPolyaryl1980]. Ne risulta conferma:
+
+#+begin_quote
+Unit cell parameters depend on the annealing temperature. Crystallization kinetic is deduced from the unit
+cell parameters.
+#+end_quote
+
+* Conclusioni sulle informazioni disponibili
+
+Il PEEK cristallino adotta una struttura ortorombica con gruppo spaziale ~Pbcn~.
+
+Negli studi di diffrazione a raggi X e neutroni degli anni '80 è stata stabilita questa struttura, mostrando
+due catene polimeriche per cella unitaria disposte in una conformazione a zig-zag lungo l'asse c. Una catena
+passa attraverso l'origine della cella, mentre l'altra passa attraverso il centro della cella, il che
+significa che la cella contiene porzioni di entrambe le catene (effettivamente circa quattro unità ripetitive
+del monomero per cella). Gli anelli di fenilico nella catena principale alternano l'orientamento lungo la
+catena, con una conformazione quasi completamente trans che massimizza la linearità della catena nel
+cristallo.
+
+Questo produce un reticolo compatto con alta stabilità termica e densità. In bibliografia le densità:
+
+| reference                                  |     d |
+|--------------------------------------------+-------|
+| [cite:@dawsonXrayDataPolyaryl1980]         | 1.272 |
+| [cite:@fratiniRefinementStructurePEEK1986] | 1.392 |
+| [cite:@jiVariationUnitCell1998]            | 1.382 |
+| [cite:@pisaniMultiscaleModelingPEEK2019]   | 1.415 |
+
+* CIF file
+
+Un CIF già pronto per il PEEK non si trova comunemente nelle banche dati aperte. Tuttavia, i dati
+cristallografici provenienti dalla letteratura sono sufficienti per costruirne uno.
+
+[cite:@fratiniRefinementStructurePEEK1986] è l'unico riportare in chiaro le coordinate raffinate, confermando
+il gruppo spaziale Pbcn e elencando le coordinate atomiche frazionarie per gli atomi della catena principale
+del PEEK. Queste coordinate pubblicate possono essere utilizzate per costruire manualmente un CIF o un altro
+formato.
+
+Ne risulta però un incongruenza, la prima di molte. I parametri di cella riportati sono:
+
+|   |           |
+|---+-----------|
+| a | 7.83 0.02 |
+| b | 5.94 0.01 |
+| c | 9.86 0.04 |
+
+Tuttavia la cella disegnata contiene 6 anelli e 38 atomi di carbonio, ben più che le due unità contenute nella
+cella più piccola. L'unico modo per inserirle tutte è considerare la cella tripla con c 29.58.
+
+Inoltre, se si fa riferimento alla tabella delle posizioni di Wickoff del gruppo spaziale
+
+| Multiplicity | Wyckoff | Site Symmetry | Coordinates                                                      |
+|--------------+---------+---------------+------------------------------------------------------------------|
+| 8            | d       | 1             | (x,y,z)                                                          |
+|              |         |               | (-x+1/2,-y+1/2,z+1/2)                                            |
+|              |         |               | (-x,y,-z+1/2)                                                    |
+|              |         |               | (x+1/2,-y+1/2,-z)                                                |
+|              |         |               | (-x,-y,-z)                                                       |
+|              |         |               | (x+1/2,y+1/2,-z+1/2)                                             |
+|              |         |               | (x,-y,z+1/2)                                                     |
+|              |         |               | (-x+1/2,y+1/2,z)                                                 |
+| 4            | c       | .2.           | (0,y,1/4)                                                        |
+|              |         |               | (1/2,-y+1/2,3/4)                                                 |
+|              |         |               | (0,-y,3/4)                                                       |
+|              |         |               | (1/2,y+1/2,1/4)                                                  |
+| 4            | b       | -1            | (0,1/2,0)                                                        |
+|              |         |               | (1/2,0,1/2)                                                      |
+|              |         |               | (0,1/2,1/2)                                                      |
+|              |         |               | (1/2,0,0)                                                        |
+| 4            | a       | -1            | (0,0,0)                                                          |
+|              |         |               | (1/2,1/2,1/2)                                                    |
+|              |         |               | (0,0,1/2)                                                        |
+|              |         |               | (1/2,1/2,0)                                                      |
+
+Tutte le posizioni riportate rientrano nella prima riga, ergo hanno molteplicità 8. Ma se si riportano 38 
+atomi di carbonio nelle posizioni atomiche: ci sono 5 catene ergo 190 atomi di carbonio. Ma se ciascuno ha molteplicità 8
+si ottengono in realtà 1520 atomi di carbonio.
+
+* Parametri di misura
+
+Facendo riferimento al paper [cite:@doumengComparativeStudyCrystallinity2021] é stati impostati i parametri di
+misura:
+
+#+begin_quote
+X-ray diffraction - Philips, X’Pert Panalytical - is performed to calculate the degree of crystallinity χc of
+PEEK films. The diffraction angular 2θ is ranged from 5◦ to 40◦ with an increment of 0.01◦. The diffractometer
+system uses Cu tube as an X-ray source with an intensity of 40 mA and a tension of 45 kV. The calculation of
+the degree of crystallinity is obtained by a deconvolution in Gaussian curves, and is performed with 9 curves
+for the crystalline part and 5 curves for the amorphous part. The degree of crystallinity is the ratio of the
+sum of the deconvoluted crystalline part over the sum of the crystalline and the amorphous deconvoluted parts.
+A supplementary data presents the deconvoluted curves for all samples.
+#+end_quote
+
++ Angoli da 5 a 40
+
++ incremento in 0.01
+
+Il tempo di misura é stato inizialmente impostato a 0.250 s. Diffrattogramma apparentemente rumoroso:
+aumentato a 1 s per step (analisi 2 ore).
+
+Si osserva forse un piccolo shift rispetto ai valori di [cite:@doumengComparativeStudyCrystallinity2021],
+tuttavia se si osserva quanto riportato in [cite:@luComparisonAnalysisMeasurements2024] vengono riportati:
+
++ (110) 18.68
+
++ (111) 20.67
+
++ (200) 22.73
+
++ (211) 28.70
+
+Da queste misure si intende ricavare:
+
++ grado di cristallinitá
+
++ dimensione dei grani
+
+
+Inoltre dopo aver grattuggiato si puó valutare il contributo dell'orientazione preferenziale. Valutare l'uso
+di uno standard interno per la valutazione in termini assoluti. Bisogna capire un atttimo come procedere alla macinazione.
