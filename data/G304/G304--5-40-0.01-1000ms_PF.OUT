@@ -1,0 +1,176 @@
+ 
+ 
+            ------------------------------------ 
+                  --- PROGRAM: XRFIT ---
+            (Author: J. Rodriguez-Carvajal, LLB)
+                 (version 3.0 October 1998) 
+            ------------------------------------ 
+
+ => TITLE: Yobs                                                                                                                                                                                                                                                            
+
+ => 2Theta range, peaks and cycles read 
+ => 2Theta(init)    :     6.577800
+ => 2Theta(fin )    :    36.014198
+ => Number of peaks :     8
+ => Number of background points :     2
+ => Number of cycles:    30
+ => Wave (A)               :      1.540600      1.540600
+
+ => Global parameters                 Flag
+ => Kalph2/Kalph1 ratio    :      0.500000  0
+ => Asymmetry parameter S_L:      0.000000  0
+ => Asymmetry parameter D_L:      0.000000  0
+
+      Profile Parameters for Pseudo-Voigt
+        pV(x) = ETA* L(x) + (1-ETA)* G(x)
+    FWHM = SQRT((U tanT + V) tanT + W) + Z/cosT
+    ETA  = Eta0 + X * 2T 
+
+ => Parameter  U           :      0.000000  0
+ => Parameter  V           :      0.000000  0
+ => Parameter  W           :      5.706293  0
+ => Parameter  Z           :      0.000000  0
+ => Parameter Eta0         :      0.500000  1
+ => Parameter  X           :      0.000000  0
+
+ => Background parameters
+      Scatt. Variable     Background  Flag
+            6.5778           21.1911   1
+           36.0142           22.6027   1
+
+      Position      Intensity      D-Gamma         D-Eta          Flags
+
+     18.535660        148.69     -1.259638      0.000000       0  0  0  0
+     20.292635         75.10     -0.829699      0.000000       0  0  0  0
+     22.309181         84.04     -1.120515      0.000000       0  0  0  0
+     28.508434         26.88     -1.079520      0.000000       0  0  0  0
+     30.012529         24.40      0.000000      0.000000       0  0  0  0
+     33.275898         21.53      0.000000      0.000000       0  0  0  0
+     17.089600         73.91      0.000000      0.000000       0  0  0  0
+     20.405180        813.60      9.031572      0.000000       0  0  0  0
+
+ => Total number of refined parameters:    3
+
+
+ -------------------------------------------------
+ => Marquardt Least Squares Fitting for  30 cycles
+ -------------------------------------------------
+
+ => Number of observations   :   2897
+ => Number of free parameters:      3
+ => Range of variable X      : (      6.5778,     36.0142)
+
+
+ => Cycle No.:    1  Chi2 =      0.190124
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.500000       -0.292148        0.207852        0.007579      -38.544868
+             background_2    10        21.191061        0.005329       21.196390        0.214570        0.024836
+              Intensity_7    11        22.602682        0.011444       22.614126        0.221086        0.051763
+
+
+ => Cycle No.:    2  Chi2 =      0.120543
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.207852       -0.117141        0.090711        0.007583      -15.448058
+             background_2    10        21.196390       -0.000191       21.196199        0.214693       -0.000888
+              Intensity_7    11        22.614126       -0.000402       22.613724        0.221213       -0.001819
+
+
+ => Cycle No.:    3  Chi2 =      0.109406
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.090711       -0.046867        0.043844        0.007583       -6.180426
+             background_2    10        21.196199       -0.000010       21.196190        0.214705       -0.000044
+              Intensity_7    11        22.613724       -0.000015       22.613708        0.221225       -0.000069
+
+
+ => Cycle No.:    4  Chi2 =      0.107624
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.043844       -0.018747        0.025096        0.007583       -2.472215
+             background_2    10        21.196190        0.000002       21.196192        0.214706        0.000009
+              Intensity_7    11        22.613708        0.000000       22.613708        0.221227        0.000000
+
+
+ => Cycle No.:    5  Chi2 =      0.107339
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.025096       -0.007499        0.017597        0.007583       -0.988888
+             background_2    10        21.196192        0.000000       21.196192        0.214707        0.000000
+              Intensity_7    11        22.613708        0.000000       22.613708        0.221227        0.000000
+
+
+ => Cycle No.:    6  Chi2 =      0.107293
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.017597       -0.003000        0.014598        0.007583       -0.395556
+             background_2    10        21.196192       -0.000002       21.196190        0.214707       -0.000009
+              Intensity_7    11        22.613708        0.000000       22.613708        0.221227        0.000000
+
+
+ => Cycle No.:    7  Chi2 =      0.107286
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.014598       -0.001200        0.013398        0.007583       -0.158220
+             background_2    10        21.196190        0.000000       21.196190        0.214707        0.000000
+              Intensity_7    11        22.613708        0.000000       22.613708        0.221227        0.000000
+
+
+ => Cycle No.:    8  Chi2 =      0.107285
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.013398       -0.000480        0.012918        0.007583       -0.063289
+             background_2    10        21.196190        0.000000       21.196190        0.214707        0.000000
+              Intensity_7    11        22.613708        0.000000       22.613708        0.221227        0.000000
+
+
+ => Cycle No.:    9  Chi2 =      0.107284
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+             background_2     8         0.012918       -0.000192        0.012726        0.007583       -0.025314
+             background_2    10        21.196190        0.000002       21.196192        0.214707        0.000009
+              Intensity_7    11        22.613708        0.000000       22.613708        0.221227        0.000000
+
+ => Convergence reached! : Chi2(old)-Chi2(new) < 0.000001 * Chi2(old)
+
+
+  Rfact=    3.173   Rwfact=    4.061   Rex=   12.398
+
+  Final value of Marquardt F-Lambda =            0.000
+
+ => Correlation Matrix: 
+
+
+ => There is no correlations greater than 50% 
+
+
+      FINAL LIST OF REFINED PARAMETERS AND STANDARD DEVIATIONS
+      --------------------------------------------------------
+
+
+    #   Parameter name                       No.(Model)         Final-Value   Standard Deviation
+
+    1    Eta0-PV                                      8             0.01265             0.00758
+    2    background_1                                10            21.19619             0.21471
+    3    background_2                                11            22.61371             0.22123
+
+ => Final value of Chi2:   0.10728    

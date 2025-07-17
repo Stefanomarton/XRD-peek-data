@@ -1,0 +1,132 @@
+ 
+ 
+            ------------------------------------ 
+                  --- PROGRAM: XRFIT ---
+            (Author: J. Rodriguez-Carvajal, LLB)
+                 (version 3.0 October 1998) 
+            ------------------------------------ 
+
+ => TITLE: Yobs                                                                                                                                                                                                                                                            
+
+ => 2Theta range, peaks and cycles read 
+ => 2Theta(init)    :     6.262700
+ => 2Theta(fin )    :    36.248001
+ => Number of peaks :     8
+ => Number of background points :     2
+ => Number of cycles:    30
+ => Wave (A)               :      1.540600      1.540600
+
+ => Global parameters                 Flag
+ => Kalph2/Kalph1 ratio    :      0.500000  0
+ => Asymmetry parameter S_L:      0.000000  0
+ => Asymmetry parameter D_L:      0.000000  0
+
+      Profile Parameters for Pseudo-Voigt
+        pV(x) = ETA* L(x) + (1-ETA)* G(x)
+    FWHM = SQRT((U tanT + V) tanT + W) + Z/cosT
+    ETA  = Eta0 + X * 2T 
+
+ => Parameter  U           :      0.000000  0
+ => Parameter  V           :      0.000000  0
+ => Parameter  W           :      4.527174  0
+ => Parameter  Z           :      0.000000  0
+ => Parameter Eta0         :      0.059752  1
+ => Parameter  X           :      0.000000  0
+
+ => Background parameters
+      Scatt. Variable     Background  Flag
+            6.2627           25.3808   0
+           36.2480           23.5317   0
+
+      Position      Intensity      D-Gamma         D-Eta          Flags
+
+     18.649252        153.01     -1.242484      0.000000       0  0  0  0
+     20.467037         79.15     -0.633504      0.000000       0  0  0  0
+     22.504148        105.31     -0.985320      0.000000       0  0  0  0
+     28.532616         43.21     -0.848033      0.000000       0  0  0  0
+     30.038641         35.23      1.000000      0.000000       0  0  0  0
+     33.432541         16.87      0.500000      0.000000       0  0  0  0
+     17.202717         47.98      0.019037      0.000000       1  0  0  0
+     19.946793        751.12      8.109396      0.000000       1  1  0  0
+
+ => Total number of refined parameters:    4
+
+
+ -------------------------------------------------
+ => Marquardt Least Squares Fitting for  30 cycles
+ -------------------------------------------------
+
+ => Number of observations   :   2951
+ => Number of free parameters:      4
+ => Range of variable X      : (      6.2627,     36.2480)
+
+
+ => Cycle No.:    1  Chi2 =      0.085713
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+              Intensity_8     8         0.059752        0.003750        0.063502        0.010438        0.359269
+              Bragg_Pos_7    36        17.202717        0.004635       17.207352        0.053963        0.085889
+              Bragg_Pos_8    40        19.946793       -0.000082       19.946711        0.027364       -0.002997
+              Shf_Gamma_1    41       751.115051        2.919800      754.034851        5.555096        0.525607
+
+
+ => Cycle No.:    2  Chi2 =      0.085702
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+              Intensity_8     8         0.063502        0.001427        0.064929        0.010425        0.136832
+              Bragg_Pos_7    36        17.207352       -0.000200       17.207151        0.054135       -0.003699
+              Bragg_Pos_8    40        19.946711        0.000025       19.946735        0.027323        0.000908
+              Shf_Gamma_1    41       754.034851       -0.026978      754.007874        5.571053       -0.004842
+
+
+ => Cycle No.:    3  Chi2 =      0.085701
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+              Intensity_8     8         0.064929        0.000566        0.065494        0.010425        0.054256
+              Bragg_Pos_7    36        17.207151        0.000042       17.207193        0.054169        0.000775
+              Bragg_Pos_8    40        19.946735       -0.000002       19.946733        0.027344       -0.000070
+              Shf_Gamma_1    41       754.007874       -0.004456      754.003418        5.572864       -0.000800
+
+
+ => Cycle No.:    4  Chi2 =      0.085700
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+              Intensity_8     8         0.065494        0.000224        0.065718        0.010424        0.021491
+              Bragg_Pos_7    36        17.207193        0.000010       17.207203        0.054183        0.000176
+              Bragg_Pos_8    40        19.946733        0.000000       19.946733        0.027352        0.000000
+              Shf_Gamma_1    41       754.003418       -0.001892      754.001526        5.573405       -0.000339
+
+ => Convergence reached! : Chi2(old)-Chi2(new) < 0.000001 * Chi2(old)
+
+
+  Rfact=    2.858   Rwfact=    3.626   Rex=   12.385
+
+  Final value of Marquardt F-Lambda =            0.000
+
+ => Correlation Matrix: 
+
+    Correlation:  68 > 50% for parameters:                                    Eta0-PV & Intensity_8                             
+
+ => There are   1 values of Correlation > 50%
+
+
+      FINAL LIST OF REFINED PARAMETERS AND STANDARD DEVIATIONS
+      --------------------------------------------------------
+
+
+    #   Parameter name                       No.(Model)         Final-Value   Standard Deviation
+
+    1    Eta0-PV                                      8             0.06581             0.01042
+    2    Bragg_Pos_7                                 36            17.20721             0.05419
+    3    Bragg_Pos_8                                 40            19.94673             0.02736
+    4    Intensity_8                                 41           754.00079             5.57369
+
+ => Final value of Chi2:   0.85700E-01

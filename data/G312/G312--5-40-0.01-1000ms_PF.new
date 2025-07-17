@@ -1,0 +1,29 @@
+ => TITLE: G312--5-40-0.01-1000ms.xy
+! Ang_init   Ang_fin  Nbac Npeak  Ncyc  Inte  Inst  Jobt  Cont Weight Corr Constr  Percent   IRF
+    6.5473   35.9837     2     8    30     1    10     1     0     0    50      0        0     0
+    1.540600    1.540600  <=  Lambda1 & Lambda2
+!  Global Profile Parameters:
+        0.500000     0      <= Kalph2/Kalph1 ratio      &  Flag 
+        0.000000     0      <= Asymmetry parameter(S_L) &    "  
+        0.000000     0      <= Asymmetry parameter(D_L) &    "  
+        0.000000     0      <= Parameter  U             &    "  
+        0.000000     0      <= Parameter  V             &    "  
+        5.000000     0      <= Parameter  W             &    "  
+        0.000000     0      <= Parameter  Z             &    "  
+        0.500000     0      <= Parameter Eta0           &    "  
+        0.000000     0      <= Parameter  X             &    "  
+!  Background Parameters:
+!    2Theta/TOF/Energy   Background    Flag
+        6.5473       15.7682     1
+       35.9837       22.0398     1
+!  Reflection Parameters:
+!       2Theta     Intensity    Shift-FWHM     Shift-Eta    Flags 
+     18.539038        145.00     -1.358072      0.000000  1  1  1  0
+     20.245211         71.21     -0.635763      0.000000  1  1  1  0
+     22.339628        115.98     -0.905972      0.000000  1  1  1  0
+     28.328054         41.04     -0.788213      0.000000  1  1  1  0
+     29.725355         35.36      0.500000      0.000000  0  1  0  0
+     33.328110         12.85     -0.565115      0.000000  0  1  1  0
+     17.263441         59.12      0.000000      0.000000  1  1  0  0
+     19.569757        980.61      8.260382      0.000000  0  1  1  0
+!  Chi2 =   0.384806E-01

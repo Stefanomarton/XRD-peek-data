@@ -1,0 +1,29 @@
+ => TITLE: G105--5-40-0.01-1000ms.xy
+! Ang_init   Ang_fin  Nbac Npeak  Ncyc  Inte  Inst  Jobt  Cont Weight Corr Constr  Percent   IRF
+    6.2627   36.2480     2     8    30     1    10     1     0     0    50      0        0     0
+    1.540600    1.540600  <=  Lambda1 & Lambda2
+!  Global Profile Parameters:
+        0.500000     0      <= Kalph2/Kalph1 ratio      &  Flag 
+        0.000000     0      <= Asymmetry parameter(S_L) &    "  
+        0.000000     0      <= Asymmetry parameter(D_L) &    "  
+        0.000000     0      <= Parameter  U             &    "  
+        0.000000     0      <= Parameter  V             &    "  
+        4.527174     0      <= Parameter  W             &    "  
+        0.000000     0      <= Parameter  Z             &    "  
+        0.065807     1      <= Parameter Eta0           &    "  
+        0.000000     0      <= Parameter  X             &    "  
+!  Background Parameters:
+!    2Theta/TOF/Energy   Background    Flag
+        6.2627       25.3808     0
+       36.2480       23.5317     0
+!  Reflection Parameters:
+!       2Theta     Intensity    Shift-FWHM     Shift-Eta    Flags 
+     18.649252        153.01     -1.242484      0.000000  0  0  0  0
+     20.467037         79.15     -0.633504      0.000000  0  0  0  0
+     22.504148        105.31     -0.985320      0.000000  0  0  0  0
+     28.532616         43.21     -0.848033      0.000000  0  0  0  0
+     30.038641         35.23      1.000000      0.000000  0  0  0  0
+     33.432541         16.87      0.500000      0.000000  0  0  0  0
+     17.207207         47.98      0.019037      0.000000  1  0  0  0
+     19.946733        754.00      8.109396      0.000000  1  1  0  0
+!  Chi2 =   0.857003E-01
