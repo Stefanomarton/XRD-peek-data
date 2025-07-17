@@ -21,6 +21,10 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 
 ![](./results/fwhm_drift_plot.png)
 
+## Intensity drift
+
+![](./results/intensity_drift.png)
+
 # Peak Fitting
 
 ![](./results/G312_fit_plot.png)
