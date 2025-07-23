@@ -2,8 +2,8 @@
 
 La repository è pensata per tenere traccia in maniera riproducibile dei dati ottenuti e per tracciare le modifiche dei risultati derivanti da diversi approcci e modifiche al fitting. 
 
-La branch `master` è quella che viene mantenuta aggiornata con le ultime modifiche effettuate. 
-Le altre hanno nome e descrizione esplicative.
+La branch `master` contiene dati, plot e fitting aggiornati all'ultimo incontro.
+La branch `fixed-background-peak-fit` contiene i dati aggiornati con la modifica sul range in X e sul bg costante. [Clicca qui per visualizzare](https://github.com/Stefanomarton/XRD-peek-data/tree/fixed-background-peak-fit-(x%26y))
 
 Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 
