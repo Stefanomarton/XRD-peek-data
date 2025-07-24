@@ -5,7 +5,7 @@ pkgs.mkShell {
 
   buildInputs = with pkgs; [
     python312
-    (python312.withPackages (ps: with ps; [ numpy pandas matplotlib ]))
+    (python312.withPackages (ps: with ps; [ numpy pandas matplotlib scipy ]))
   ];
 
   shellHook = ''
