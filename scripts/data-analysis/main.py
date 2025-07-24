@@ -8,6 +8,7 @@ from core import load_xy, save_peak_table_csv
 from cristallinity import compute_crystallinity_ratio, plot_crystallinity_summary
 from drifts import plot_fwhm_drift_lines, plot_intensity_drift_lines, plot_peak_position_drift
 from scatter import plot_peak_metrics_vs_crystallinity
+from stats import analyze_crystallinity
 
 # ------------------------------------------------------------------
 # Per-sample plot (peaks + calc + experimental + residuals)
@@ -202,6 +203,10 @@ def batch_plot(
        # ------------------------------- plot -------------------------------------
         plot_path = os.path.join(final_outdir, "crystallinity_summary_plot.png")
         plot_crystallinity_summary(csv_path, save_path=plot_path)
+
+        crystallinity_stats = os.path.join(final_outdir, "crystallinity_stats.txt")
+        analyze_crystallinity(csv_path, crystallinity_stats)
+        
     
     # Peak position drift
     peak_pos_plot = os.path.join(final_outdir, "peak_position_drift.png")
