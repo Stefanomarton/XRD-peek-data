@@ -1,42 +1,65 @@
 import os
 import numpy as np
+import pandas as pd
 
-from core import extract_peaks_from_ref
-
+from core import save_peak_table_csv
 
 # ------------------------------------------------------------------
-# Crystallinity (ratio & std dev from scatter of peak contributions)
+# Crystallinity (ratio & std dev from scatter of peak contributions)
+#   – version that reads the *_peak_table.csv* produced by
+#     save_peak_table_csv rather than the original .REF file
 # ------------------------------------------------------------------
-def compute_crystallinity_ratio(ref_path, numerator_peaks, total_peaks):
+
+def compute_crystallinity_ratio(csv_path, numerator_peaks):
     """
     Return (ratio, std_dev):
         ratio    = sum(I_selected) / sum(I_all)
-        std_dev  = std‑dev of individual peak‑ratios   I_i / sum(I_all)
-    numerator_peaks – list of 1‑based peak indices to include in numerator.
-    """
-    positions, intensities, _sigmas, *_ = extract_peaks_from_ref(ref_path, total_peaks)
+        std_dev  = std-dev of individual peak-ratios   I_i / sum(I_all)
 
-    if not intensities:
-        raise ValueError(f"No peaks parsed from {ref_path}")
+    Parameters
+    ----------
+    csv_path : str
+        Path to the CSV created by `save_peak_table_csv` for one sample.
+        The file must contain an 'Intensity' column.
+    numerator_peaks : list[int]
+        1-based indices of the peaks that belong in the numerator.
+
+    Notes
+    -----
+    * The order of rows in the CSV is treated exactly like the peak
+      order in the REF file used to be, so the same index list works.
+    * Any rows whose intensity is NaN or zero are ignored.
+    """
+
+    if not os.path.isfile(csv_path):
+        raise FileNotFoundError(csv_path)
+
+    # read only the intensities column
+    intensities = pd.read_csv(csv_path, usecols=['Intensity'])['Intensity'].to_numpy()
+
+    # filter out any NaN values that might slip in
+    intensities = intensities[~np.isnan(intensities)]
+
+    if intensities.size == 0:
+        raise ValueError(f"No intensities found in {csv_path}")
 
     max_req = max(numerator_peaks)
-    if len(intensities) < max_req:
+    if intensities.size < max_req:
         raise ValueError(
-            f"{os.path.basename(ref_path)} has {len(intensities)} peaks; "
+            f"{os.path.basename(csv_path)} has {intensities.size} peaks; "
             f"requested peak index {max_req}"
         )
 
-    total_intensity = float(sum(intensities))
+    total_intensity = float(intensities.sum())
     if total_intensity == 0:
         return 0.0, 0.0
 
-    # Overall crystallinity ratio
-    numerator = sum(intensities[i - 1] for i in numerator_peaks)
+    numerator = float(sum(intensities[i - 1] for i in numerator_peaks))
     ratio = numerator / total_intensity
 
-    # Build list of individual peak‑ratios, then std dev of that list
-    peak_ratios = [intensities[i - 1] / total_intensity for i in numerator_peaks]
-    std_dev = float(np.std(peak_ratios, ddof=0))   # population std‑dev
+    # peak-specific ratios for the population σ
+    peak_ratios = [float(intensities[i - 1] / total_intensity) for i in numerator_peaks]
+    std_dev = float(np.std(peak_ratios, ddof=0))
 
     return ratio, std_dev
 
@@ -120,3 +143,25 @@ def plot_crystallinity_summary(csv_path, save_path=None):
         plt.close()
     else:
         plt.show()
+
+
+def calculate_crystallinity_from_csv(csv_path, crystallinity_peaks, crystallinity_summary=None):
+    """
+    Compute crystallinity ratio from a peak table CSV.
+    Append result to summary if provided.
+    """
+    import os
+
+    if not crystallinity_peaks or not os.path.isfile(csv_path):
+        return None
+
+    name = os.path.basename(csv_path).replace("_peak_table.csv", "")
+    ratio, std_dev = compute_crystallinity_ratio(csv_path, crystallinity_peaks)
+
+    if crystallinity_summary is not None:
+        crystallinity_summary.append((name, ratio, std_dev))
+
+    return ratio, std_dev
+
+
+

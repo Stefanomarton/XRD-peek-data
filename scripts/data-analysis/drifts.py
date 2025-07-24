@@ -185,3 +185,23 @@ def plot_intensity_drift_lines(folder, save_path=None, show_error=False):
         plt.close()
     else:
         plt.show()
+
+import os
+
+def plot_drift(output_dir):
+    # Ensure drift directory exists
+    drift_dir = os.path.join(output_dir, "drift")
+    os.makedirs(drift_dir, exist_ok=True)
+
+    # Peak position drift
+    peak_pos_plot = os.path.join(drift_dir, "peak_position_drift.png")
+    plot_peak_position_drift(output_dir, save_path=peak_pos_plot)
+
+    # FWHM drift
+    fwhm_plot = os.path.join(drift_dir, "fwhm_drift_plot.png")
+    plot_fwhm_drift_lines(output_dir, save_path=fwhm_plot, show_error=False)
+
+    # Intensity drift
+    intensity_plot = os.path.join(drift_dir, "intensity_drift.png")
+    plot_intensity_drift_lines(output_dir, save_path=intensity_plot, show_error=False)
+
