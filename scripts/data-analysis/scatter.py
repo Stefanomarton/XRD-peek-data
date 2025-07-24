@@ -1,16 +1,13 @@
 import os
-import re
-import csv
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from io import StringIO
-from matplotlib import cm
+
 
 # ------------------------------------------------------------------
 # Peak-metric vs Crystallinity  (2×4 grid, 8 colours)
 # ------------------------------------------------------------------
-def plot_peak_metrics_vs_crystallinity(folder, summary_csv="crystallinity_summary.csv"):
+
+def plot_peak_metrics_vs_crystallinity(folder, summary_csv="crystallinity_summary_7.csv"):
     cpath = os.path.join(folder, summary_csv)
     if not os.path.exists(cpath):
         print(f"[peak-metrics] Missing {cpath}")
@@ -44,6 +41,10 @@ def plot_peak_metrics_vs_crystallinity(folder, summary_csv="crystallinity_summar
         print("[peak-metrics] No overlap between peaks and summary.")
         return
 
+    # Ensure scatter output folder exists
+    scatter_dir = os.path.join(folder, "scatter")
+    os.makedirs(scatter_dir, exist_ok=True)
+
     # Fixed palette: tab10 first 8 colours
     palette = list(plt.get_cmap("tab10").colors[:8])
 
@@ -74,7 +75,7 @@ def plot_peak_metrics_vs_crystallinity(folder, summary_csv="crystallinity_summar
 
         fig.suptitle(f"Crystallinity vs {xlabel}", fontsize=14)
         plt.tight_layout(rect=[0, 0, 1, 0.94])
-        path = os.path.join(folder, out_png)
+        path = os.path.join(scatter_dir, out_png)
         fig.savefig(path, dpi=500, bbox_inches="tight")
         print("Saved", path)
         plt.close(fig)
@@ -83,3 +84,4 @@ def plot_peak_metrics_vs_crystallinity(folder, summary_csv="crystallinity_summar
     collage("Intensity", "Intensity (a.u.)", "crystallinity_vs_intensity.png", logx=False)
     collage("Position",  "Position (°)",     "crystallinity_vs_position.png",  logx=False)
     collage("FWHM",      "FWHM (°)",         "crystallinity_vs_fwhm.png",      logx=False)
+
