@@ -1,10 +1,11 @@
 # Preamble
 
-La repository è pensata per tenere traccia in maniera riproducibile dei dati ottenuti e per tracciare le modifiche dei risultati derivanti da diversi approcci e modifiche al fitting. 
+La repository è pensata per tenere traccia in maniera riproducibile
+dei dati ottenuti e per tracciare le modifiche dei risultati derivanti
+da diversi approcci e modifiche al fitting.
 
-La branch `master` contiene dati, plot e fitting aggiornati all'ultimo incontro.
-
-La branch `fixed-background-peak-fit` contiene i dati aggiornati con la modifica sul range in X e sul bg costante. [Clicca qui per visualizzare](https://github.com/Stefanomarton/XRD-peek-data/tree/fixed-background-peak-fit-(x%26y))
+La branch `master` contiene dati, plot e fitting aggiornati all'ultimo incontro. 
+La branch `fixed-background-peak-fit` contiene i dati aggiornati con la modifica sul range in X e sul bg costante.
 
 Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 
@@ -12,33 +13,71 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 
 ## Cristallinity
 
-![](./results/crystallinity_summary_plot.png)
+Di seguito i plot considerando prograssivamente tutti i picchi tranne l'amorfo (8).
 
-## Peak position drift
+### 1
 
-![](./results/peak_position_drift.png)
+![](./results/crystallinity_summary_1_plot.png)
 
-## FWHM drift
+### 2
 
-![](./results/fwhm_drift_plot.png)
+![](./results/crystallinity_summary_2_plot.png)
 
-## Intensity drift
+### 3
 
-![](./results/intensity_drift.png)
+![](./results/crystallinity_summary_3_plot.png)
 
-## Intensity vs cristallinity
+### 4
 
-![](./results/crystallinity_vs_intensity.png)
+![](./results/crystallinity_summary_4_plot.png)
 
-## FWHM vs cristallinity
+### 5
 
-![](./results/crystallinity_vs_fwhm.png)
+![](./results/crystallinity_summary_5_plot.png)
 
-## Position vs cristallinity
+### 6
 
-![](./results/crystallinity_vs_position.png)
+![](./results/crystallinity_summary_6_plot.png)
+
+### 7
+
+![](./results/crystallinity_summary_7_plot.png)
+
+## Drifts
+
+Andamento della posizione dei picchi, FWHM, ed intensità rispetto nei fitting dei diversi campioni
+
+### Peak position drift
+
+![](./results/drift/peak_position_drift.png)
+
+### FWHM drift
+
+![](./results/drift/fwhm_drift_plot.png)
+
+### Intensity drift
+
+![](./results/drift/intensity_drift.png)
+
+## Scatter
+
+Andamento di intensità, FWHM, e posizione rispetto a ciascun picco in ciascun campione.
+
+### Intensity vs cristallinity
+
+![](./results/scatter/crystallinity_vs_intensity.png)
+
+### FWHM vs cristallinity
+
+![](./results/scatter/crystallinity_vs_fwhm.png)
+
+### Position vs cristallinity
+
+![](./results/scatter/crystallinity_vs_position.png)
 
 # Peak Fitting
+
+## Gruppo profilo amorfo
 
 ![](./results/G312_fit_plot.png)
 ![](./results/G311_fit_plot.png)
@@ -51,6 +90,9 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 ![](./results/G304_fit_plot.png)
 ![](./results/G302_fit_plot.png)
 ![](./results/G301_fit_plot.png)
+
+## Gruppo profilo cristallino
+
 ![](./results/G112_fit_plot.png)
 ![](./results/G111_fit_plot.png)
 ![](./results/G110_fit_plot.png)
@@ -64,7 +106,11 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 
 # XRD
 
+## Background
 ![](./plots/G000_5-40-0.01-1000ms.png)
+
+## Gruppo profilo cristallino
+
 ![](./plots/G101--5-40-0.01-1000ms.png)
 ![](./plots/G102--5-40-0.01-1000ms.png)
 ![](./plots/G104--5-40-0.01-1000ms.png)
@@ -75,6 +121,8 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 ![](./plots/G110--5-40-0.01-1000ms.png)
 ![](./plots/G111--5-40-0.01-1000ms.png)
 ![](./plots/G112--5-40-0.01-1000ms.png)
+
+## Gruppo profilo amorfo
 ![](./plots/G301--5-40-0.01-1000ms.png)
 ![](./plots/G302--5-40-0.01-1000ms.png)
 ![](./plots/G304--5-40-0.01-1000ms.png)
@@ -86,6 +134,8 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 ![](./plots/G310--5-40-0.01-1000ms.png)
 ![](./plots/G311--5-40-0.01-1000ms.png)
 ![](./plots/G312--5-40-0.01-1000ms.png)
+
+## Sovrapposti
 ![](./plots/sovrapposto_amorfo.png)
 ![](./plots/sovrapposto_confronto-piatto-1-posizione-1.png)
 ![](./plots/sovrapposto_confronto-piatto-1-posizione-2.png)
