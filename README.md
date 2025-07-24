@@ -25,6 +25,18 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 
 ![](./results/intensity_drift.png)
 
+## Intensity vs cristallinity
+
+![](./results/crystallinity_vs_intensity.png)
+
+## FWHM vs cristallinity
+
+![](./results/crystallinity_vs_fwhm.png)
+
+## Position vs cristallinity
+
+![](./results/crystallinity_vs_position.png)
+
 # Peak Fitting
 
 ![](./results/G312_fit_plot.png)
