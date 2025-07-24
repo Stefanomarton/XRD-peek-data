@@ -1,0 +1,7 @@
+Crystallinity Welch t-test Result
+Group 1 mean: 0.33154
+Group 1 std: 0.02297
+Group 2 mean: 0.29650
+Group 2 std: 0.01348
+T-statistic: 4.20952
+P-value: 0.00084
