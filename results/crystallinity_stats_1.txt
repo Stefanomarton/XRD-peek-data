@@ -1,7 +1,7 @@
 Crystallinity Welch t-test Result
-Group 1 mean: 0.11712
-Group 1 std: 0.00784
-Group 2 mean: 0.10281
-Group 2 std: 0.01440
-T-statistic: 2.86231
-P-value: 0.01144
+Group 1 mean: 0.10019
+Group 1 std: 0.00198
+Group 2 mean: 0.08626
+Group 2 std: 0.00747
+T-statistic: 5.96275
+P-value: 0.00008
