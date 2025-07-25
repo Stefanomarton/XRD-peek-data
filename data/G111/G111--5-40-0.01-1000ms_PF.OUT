@@ -9,9 +9,9 @@
  => TITLE: Yobs                                                                                                                                                                                                                                                            
 
  => 2Theta range, peaks and cycles read 
- => 2Theta(init)    :     6.405000
- => 2Theta(fin )    :    36.176800
- => Number of peaks :     8
+ => 2Theta(init)    :     6.008600
+ => 2Theta(fin )    :    35.993900
+ => Number of peaks :     7
  => Number of background points :     2
  => Number of cycles:    30
  => Wave (A)               :      1.540600      1.540600
@@ -28,114 +28,104 @@
 
  => Parameter  U           :      0.000000  0
  => Parameter  V           :      0.000000  0
- => Parameter  W           :      4.832103  0
+ => Parameter  W           :      9.481023  0
  => Parameter  Z           :      0.000000  0
- => Parameter Eta0         :      0.500000  0
+ => Parameter Eta0         :      0.621938  1
  => Parameter  X           :      0.000000  0
 
  => Background parameters
       Scatt. Variable     Background  Flag
-            6.4050           20.9271   1
-           36.1768           19.7603   1
+            6.0086           20.0000   0
+           35.9939           20.0000   0
 
       Position      Intensity      D-Gamma         D-Eta          Flags
 
-     18.642439        164.53     -1.362089      0.000000       0  1  1  0
-     20.605682         55.63     -1.138982      0.000000       0  1  1  0
-     22.443609        109.00     -1.132422      0.000000       0  1  1  0
-     28.604847         48.49     -1.014577      0.000000       0  1  1  0
-     30.025061         36.28      1.000000      0.000000       0  1  1  0
-     33.241436         17.61     -0.216090      0.000000       0  1  1  0
-     17.222221         44.68      0.000000      0.000000       0  1  0  0
-     20.104427        930.79      7.645511      0.000000       0  1  1  0
+     18.682787        144.89     -2.362288      0.000000       1  1  1  0
+     20.642597         25.30     -2.450575      0.000000       1  1  1  0
+     22.565516        106.77     -2.079203      0.000000       1  1  1  0
+     28.563076         62.31     -1.701550      0.000000       1  1  1  0
+     30.045946         32.69      0.000000      0.000000       0  1  0  0
+     33.408520         18.84      0.000000      0.000000       0  1  0  0
+     19.682699       1052.81      5.473910      0.000000       1  1  1  0
 
- => Total number of refined parameters:   17
+ => Total number of refined parameters:   18
 
 
  -------------------------------------------------
  => Marquardt Least Squares Fitting for  30 cycles
  -------------------------------------------------
 
- => Number of observations   :   2930
- => Number of free parameters:     17
- => Range of variable X      : (      6.4050,     36.1768)
+ => Number of observations   :   2951
+ => Number of free parameters:     18
+ => Range of variable X      : (      6.0086,     35.9939)
 
 
- => Cycle No.:    1  Chi2 =      0.119504
-
-
-              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
-
-              Shf_Gamma_8    10        20.927109       -0.014042       20.913067        0.395058       -0.035544
-             background_2    11        19.760277       -0.010386       19.749891        0.616972       -0.016833
-              Intensity_1    13       164.533112        0.070190      164.603302        3.909121        0.017956
-              Shf_Gamma_1    14        -1.362089        0.000241       -1.361848        0.018041        0.013374
-              Intensity_2    17        55.634197        0.107323       55.741520        5.582666        0.019224
-              Shf_Gamma_2    18        -1.138982        0.001115       -1.137868        0.077099        0.014460
-              Intensity_3    21       108.999176        0.050926      109.050102        4.116402        0.012372
-              Shf_Gamma_3    22        -1.132422        0.000228       -1.132195        0.034056        0.006686
-              Intensity_4    25        48.493099        0.156452       48.649551        2.432761        0.064311
-              Shf_Gamma_4    26        -1.014577        0.001295       -1.013282        0.056342        0.022986
-              Intensity_5    29        36.278660       -0.606407       35.672253        4.667878       -0.129911
-              Intensity_6    30         1.000000       -0.060489        0.939511        0.380522       -0.158962
-              Shf_Gamma_6    33        17.611998        0.293404       17.905401        3.615227        0.081158
-              Intensity_7    34        -0.216090        0.019258       -0.196832        0.322864        0.059649
-              Intensity_8    37        44.676949        0.010105       44.687054        4.008514        0.002521
-              Shf_Gamma_8    41       930.785034        0.364014      931.149048       15.279583        0.023824
-              Shf_Gamma_8    42         7.645511        0.008122        7.653633        0.208063        0.039036
-
-
- => Cycle No.:    2  Chi2 =      0.119504
+ => Cycle No.:    1  Chi2 =      0.058097
 
 
               Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
 
-              Shf_Gamma_8    10        20.913067       -0.005014       20.908052        0.398192       -0.012593
-             background_2    11        19.749891       -0.007055       19.742836        0.629762       -0.011203
-              Intensity_1    13       164.603302        0.041580      164.644882        3.944052        0.010543
-              Shf_Gamma_1    14        -1.361848        0.000159       -1.361689        0.018119        0.008750
-              Intensity_2    17        55.741520        0.064045       55.805565        5.659051        0.011317
-              Shf_Gamma_2    18        -1.137868        0.000688       -1.137180        0.077694        0.008855
-              Intensity_3    21       109.050102        0.036400      109.086502        4.159406        0.008751
-              Shf_Gamma_3    22        -1.132195        0.000171       -1.132023        0.034219        0.005003
-              Intensity_4    25        48.649551        0.032658       48.682209        2.454545        0.013305
-              Shf_Gamma_4    26        -1.013282        0.000371       -1.012911        0.056404        0.006577
-              Intensity_5    29        35.672253       -0.103508       35.568745        4.605975       -0.022473
-              Intensity_6    30         0.939511       -0.009902        0.929609        0.376509       -0.026300
-              Shf_Gamma_6    33        17.905401        0.075655       17.981056        3.708459        0.020401
-              Intensity_7    34        -0.196832        0.006017       -0.190815        0.328235        0.018330
-              Intensity_8    37        44.687054        0.022320       44.709373        4.047445        0.005515
-              Shf_Gamma_8    41       931.149048        0.049072      931.198120       15.484957        0.003169
-              Shf_Gamma_8    42         7.653633        0.003428        7.657061        0.211100        0.016236
+              Shf_Gamma_7     8         0.621938        0.000224        0.622162        0.013370        0.016745
+              Bragg_Pos_1    12        18.682787       -0.000010       18.682777        0.005876       -0.001623
+              Intensity_1    13       144.888199        0.026184      144.914383        3.627572        0.007218
+              Shf_Gamma_1    14        -2.362288       -0.000012       -2.362301        0.018790       -0.000647
+              Bragg_Pos_2    16        20.642597       -0.000011       20.642586        0.023027       -0.000497
+              Intensity_2    17        25.296885       -0.007917       25.288967        3.002746       -0.002637
+              Shf_Gamma_2    18        -2.450575       -0.000240       -2.450815        0.073636       -0.003260
+              Bragg_Pos_3    20        22.565516       -0.000013       22.565502        0.011100       -0.001203
+              Intensity_3    21       106.765976       -0.014793      106.751183        4.015898       -0.003684
+              Shf_Gamma_3    22        -2.079203       -0.000263       -2.079466        0.034162       -0.007705
+              Intensity_4    24        28.563076        0.004175       28.567251        0.021457        0.194585
+              Shf_Gamma_4    25        62.306061        0.123425       62.429485        2.679280        0.046066
+              Intensity_5    26        -1.701550        0.002006       -1.699544        0.061705        0.032512
+              Intensity_6    29        32.685219       -0.237778       32.447441        2.926748       -0.081243
+              Bragg_Pos_7    33        18.836782        0.022900       18.859682        1.741680        0.013148
+              Intensity_7    36        19.682699        0.000519       19.683218        0.030350        0.017094
+              Shf_Gamma_7    37      1052.814580        0.182251     1052.996830       10.025272        0.018179
+              Shf_Gamma_7    38         5.473910        0.000402        5.474312        0.100734        0.003990
+
+
+ => Cycle No.:    2  Chi2 =      0.058097
+
+
+              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
+
+              Shf_Gamma_7     8         0.622162        0.000049        0.622210        0.013426        0.003614
+              Bragg_Pos_1    12        18.682777        0.000002       18.682779        0.005879        0.000324
+              Intensity_1    13       144.914383        0.002457      144.916840        3.642058        0.000675
+              Shf_Gamma_1    14        -2.362301        0.000032       -2.362268        0.018854        0.001720
+              Bragg_Pos_2    16        20.642586       -0.000002       20.642584        0.023035       -0.000083
+              Intensity_2    17        25.288967        0.005388       25.294355        3.017794        0.001785
+              Shf_Gamma_2    18        -2.450815        0.000153       -2.450662        0.073901        0.002065
+              Bragg_Pos_3    20        22.565502       -0.000015       22.565487        0.011106       -0.001374
+              Intensity_3    21       106.751183       -0.001282      106.749901        4.033265       -0.000318
+              Shf_Gamma_3    22        -2.079466        0.000030       -2.079437        0.034265        0.000863
+              Intensity_4    24        28.567251       -0.000223       28.567028        0.021496       -0.010381
+              Shf_Gamma_4    25        62.429485       -0.014614       62.414871        2.696216       -0.005420
+              Intensity_5    26        -1.699544       -0.000367       -1.699911        0.061925       -0.005927
+              Intensity_6    29        32.447441        0.018032       32.465473        2.944317        0.006124
+              Bragg_Pos_7    33        18.859682       -0.000505       18.859177        1.744057       -0.000290
+              Intensity_7    36        19.683218       -0.000004       19.683214        0.030429       -0.000125
+              Shf_Gamma_7    37      1052.996830       -0.022461     1052.974370       10.080756       -0.002228
+              Shf_Gamma_7    38         5.474312        0.000287        5.474598        0.101239        0.002831
 
  => Convergence reached! : Chi2(old)-Chi2(new) < 0.000001 * Chi2(old)
 
 
-  Rfact=    3.320   Rwfact=    4.301   Rex=   12.441
+  Rfact=    2.361   Rwfact=    3.005   Rex=   12.469
 
   Final value of Marquardt F-Lambda =            0.000
 
  => Correlation Matrix: 
 
-    Correlation:  70 > 50% for parameters:                                Intensity_1 & Shf_Gamma_1                             
-    Correlation:  63 > 50% for parameters:                                Intensity_1 & Intensity_2                             
-    Correlation:  63 > 50% for parameters:                                Intensity_1 & Intensity_3                             
-    Correlation:  70 > 50% for parameters:                                Intensity_1 & Shf_Gamma_8                             
-    Correlation:  81 > 50% for parameters:                                Intensity_2 & Shf_Gamma_2                             
-    Correlation:  63 > 50% for parameters:                                Intensity_2 & Intensity_3                             
-    Correlation:  68 > 50% for parameters:                                Intensity_2 & Intensity_7                             
-    Correlation:  82 > 50% for parameters:                                Intensity_2 & Shf_Gamma_8                             
-    Correlation:  50 > 50% for parameters:                                Shf_Gamma_2 & Intensity_7                             
-    Correlation:  61 > 50% for parameters:                                Shf_Gamma_2 & Shf_Gamma_8                             
-    Correlation:  73 > 50% for parameters:                                Intensity_3 & Shf_Gamma_3                             
-    Correlation:  63 > 50% for parameters:                                Intensity_3 & Intensity_7                             
-    Correlation:  68 > 50% for parameters:                                Intensity_3 & Shf_Gamma_8                             
-    Correlation:  69 > 50% for parameters:                                Intensity_4 & Shf_Gamma_4                             
-    Correlation:  82 > 50% for parameters:                                Intensity_5 & Shf_Gamma_5                             
-    Correlation:  86 > 50% for parameters:                                Intensity_6 & Shf_Gamma_6                             
-    Correlation:  58 > 50% for parameters:                                Intensity_7 & Shf_Gamma_8                             
+    Correlation:  64 > 50% for parameters:                                Intensity_1 & Shf_Gamma_1                             
+    Correlation:  52 > 50% for parameters:                                Shf_Gamma_1 & Shf_Gamma_7                             
+    Correlation:  77 > 50% for parameters:                                Intensity_2 & Shf_Gamma_2                             
+    Correlation:  56 > 50% for parameters:                                Intensity_2 & Shf_Gamma_7                             
+    Correlation:  69 > 50% for parameters:                                Intensity_3 & Shf_Gamma_3                             
+    Correlation:  71 > 50% for parameters:                                Intensity_4 & Shf_Gamma_4                             
 
- => There are  17 values of Correlation > 50%
+ => There are   6 values of Correlation > 50%
 
 
       FINAL LIST OF REFINED PARAMETERS AND STANDARD DEVIATIONS
@@ -144,22 +134,23 @@
 
     #   Parameter name                       No.(Model)         Final-Value   Standard Deviation
 
-    1    background_1                                10            20.90632             0.39889
-    2    background_2                                11            19.74104             0.63308
-    3    Intensity_1                                 13           164.66270             3.94757
-    4    Shf_Gamma_1                                 14            -1.36161             0.01813
-    5    Intensity_2                                 17            55.83207             5.66964
-    6    Shf_Gamma_2                                 18            -1.13689             0.07773
-    7    Intensity_3                                 21           109.10154             4.16423
-    8    Shf_Gamma_3                                 22            -1.13196             0.03423
-    9    Intensity_4                                 25            48.68813             2.45964
-   10    Shf_Gamma_4                                 26            -1.01283             0.05642
-   11    Intensity_5                                 29            35.54358             4.59281
-   12    Shf_Gamma_5                                 30             0.92738             0.37571
-   13    Intensity_6                                 33            17.99876             3.73563
-   14    Shf_Gamma_6                                 34            -0.18938             0.32979
-   15    Intensity_7                                 37            44.71972             4.05276
-   16    Intensity_8                                 41           931.19476            15.51881
-   17    Shf_Gamma_8                                 42             7.65833             0.21168
+    1    Eta0-PV                                      8             0.62223             0.01343
+    2    Bragg_Pos_1                                 12            18.68278             0.00588
+    3    Intensity_1                                 13           144.91628             3.64402
+    4    Shf_Gamma_1                                 14            -2.36227             0.01886
+    5    Bragg_Pos_2                                 16            20.64258             0.02304
+    6    Intensity_2                                 17            25.29201             3.02010
+    7    Shf_Gamma_2                                 18            -2.45073             0.07394
+    8    Bragg_Pos_3                                 20            22.56549             0.01111
+    9    Intensity_3                                 21           106.74771             4.03548
+   10    Shf_Gamma_3                                 22            -2.07946             0.03428
+   11    Bragg_Pos_4                                 24            28.56704             0.02149
+   12    Intensity_4                                 25            62.41308             2.69628
+   13    Shf_Gamma_4                                 26            -1.69998             0.06193
+   14    Intensity_5                                 29            32.46603             2.94441
+   15    Intensity_6                                 33            18.85890             1.74435
+   16    Bragg_Pos_7                                 36            19.68324             0.03044
+   17    Intensity_7                                 37          1052.98206            10.08813
+   18    Shf_Gamma_7                                 38             5.47458             0.10132
 
- => Final value of Chi2:   0.11950    
+ => Final value of Chi2:   0.58097E-01

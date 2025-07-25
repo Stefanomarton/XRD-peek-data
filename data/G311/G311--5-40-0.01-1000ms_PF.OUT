@@ -9,9 +9,9 @@
  => TITLE: Yobs                                                                                                                                                                                                                                                            
 
  => 2Theta range, peaks and cycles read 
- => 2Theta(init)    :     6.516800
- => 2Theta(fin )    :    36.115799
- => Number of peaks :     8
+ => 2Theta(init)    :     6.008600
+ => 2Theta(fin )    :    35.993900
+ => Number of peaks :     7
  => Number of background points :     2
  => Number of cycles:    30
  => Wave (A)               :      1.540600      1.540600
@@ -28,100 +28,55 @@
 
  => Parameter  U           :      0.000000  0
  => Parameter  V           :      0.000000  0
- => Parameter  W           :      5.000000  0
+ => Parameter  W           :     10.650825  0
  => Parameter  Z           :      0.000000  0
- => Parameter Eta0         :      0.443770  0
+ => Parameter Eta0         :      0.559648  0
  => Parameter  X           :      0.000000  0
 
  => Background parameters
       Scatt. Variable     Background  Flag
-            6.5168           22.7469   0
-           36.1158           24.7603   0
+            6.0086           20.0000   0
+           35.9939           20.0000   0
 
       Position      Intensity      D-Gamma         D-Eta          Flags
 
-     18.553116        173.25     -1.173429      0.000000       0  0  0  0
-     20.351767         73.62     -0.687886      0.000000       0  0  0  0
-     22.333033         89.09     -1.039377      0.000000       0  0  0  0
-     28.500879         35.28     -1.000000      0.000000       1  1  1  0
-     29.934210          5.00     -0.500000      0.000000       0  0  0  0
-     33.275898          5.23     -0.500000      0.000000       0  0  0  0
-     17.000000         68.25     -0.118704      0.000000       0  0  0  0
-     20.091896        876.62      8.489559      0.000000       0  0  0  0
+     18.523155        111.46     -2.423098      0.000000       0  0  0  0
+     20.444536          7.49     -2.744356      0.000000       0  0  0  0
+     22.380352         66.19     -2.198612      0.000000       0  0  0  0
+     28.330465         63.83     -1.031450      0.000000       0  0  0  0
+     29.908102         30.06      0.000000      0.000000       0  0  0  0
+     33.197578         23.11     -0.185953      0.000000       0  0  0  0
+     19.500830       1156.42      5.386827     -0.022502       0  0  0  0
 
- => Total number of refined parameters:    3
+ => Total number of refined parameters:    0
 
 
  -------------------------------------------------
  => Marquardt Least Squares Fitting for  30 cycles
  -------------------------------------------------
 
- => Number of observations   :   2913
- => Number of free parameters:      3
- => Range of variable X      : (      6.5168,     36.1158)
+ => Number of observations   :   2951
+ => Number of free parameters:      0
+ => Range of variable X      : (      6.0086,     35.9939)
 
 
- => Cycle No.:    1  Chi2 =      0.127796
-
-
-              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
-
-              Shf_Gamma_4    24        28.500879       -0.001970       28.498909        0.026011       -0.075748
-              Bragg_Pos_1    25        35.275505        3.002079       38.277584        1.471479        2.040178
-              Bragg_Pos_2    26        -1.000000        0.246795       -0.753205        0.064390        3.832809
-
-
- => Cycle No.:    2  Chi2 =      0.127084
+ => Cycle No.:    1  Chi2 =      0.049630
 
 
               Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
 
-              Shf_Gamma_4    24        28.498909        0.020901       28.519810        0.031067        0.672768
-              Bragg_Pos_1    25        38.277584        1.081684       39.359268        1.591246        0.679772
-              Bragg_Pos_2    26        -0.753205        0.079810       -0.673395        0.077200        1.033804
-
-
- => Cycle No.:    3  Chi2 =      0.127004
-
-
-              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
-
-              Shf_Gamma_4    24        28.519810        0.007998       28.527807        0.032546        0.245733
-              Bragg_Pos_1    25        39.359268        0.324360       39.683628        1.626876        0.199376
-              Bragg_Pos_2    26        -0.673395        0.026956       -0.646438        0.080919        0.333130
-
-
- => Cycle No.:    4  Chi2 =      0.126995
-
-
-              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
-
-              Shf_Gamma_4    24        28.527807        0.002495       28.530302        0.033072        0.075436
-              Bragg_Pos_1    25        39.683628        0.102921       39.786549        1.638625        0.062809
-              Bragg_Pos_2    26        -0.646438        0.009288       -0.637150        0.082236        0.112946
-
-
- => Cycle No.:    5  Chi2 =      0.126994
-
-
-              Name-Par       No.      Old-Value          Change        New-Value         Sigma        Change/Sigma
-
-              Shf_Gamma_4    24        28.530302        0.000834       28.531136        0.033260        0.025060
-              Bragg_Pos_1    25        39.786549        0.032402       39.818951        1.642647        0.019725
-              Bragg_Pos_2    26        -0.637150        0.003017       -0.634133        0.082708        0.036475
 
  => Convergence reached! : Chi2(old)-Chi2(new) < 0.000001 * Chi2(old)
 
 
-  Rfact=    3.331   Rwfact=    4.412   Rex=   12.381
+  Rfact=    2.176   Rwfact=    2.771   Rex=   12.440
 
   Final value of Marquardt F-Lambda =            0.000
 
  => Correlation Matrix: 
 
-    Correlation:  56 > 50% for parameters:                                Intensity_4 & Shf_Gamma_4                             
 
- => There are   1 values of Correlation > 50%
+ => There is no correlations greater than 50% 
 
 
       FINAL LIST OF REFINED PARAMETERS AND STANDARD DEVIATIONS
@@ -130,8 +85,5 @@
 
     #   Parameter name                       No.(Model)         Final-Value   Standard Deviation
 
-    1    Bragg_Pos_4                                 24            28.53140             0.03334
-    2    Intensity_4                                 25            39.82948             1.64438
-    3    Shf_Gamma_4                                 26            -0.63314             0.08291
 
- => Final value of Chi2:   0.12699    
+ => Final value of Chi2:   0.49630E-01
