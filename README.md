@@ -13,7 +13,7 @@ Di seguito tutti i plot XRD, fitting e risultati ottenuti.
 
 ## Cristallinity
 
-Di seguito i plot considerando prograssivamente tutti i picchi tranne l'amorfo (8).
+Di seguito i plot considerando prograssivamente tutti i picchi tranne l'amorfo (7).
 
 ### 1
 
@@ -39,9 +39,6 @@ Di seguito i plot considerando prograssivamente tutti i picchi tranne l'amorfo (
 
 ![](./results/crystallinity_summary_6_plot.png)
 
-### 7
-
-![](./results/crystallinity_summary_7_plot.png)
 
 ## Drifts
 
