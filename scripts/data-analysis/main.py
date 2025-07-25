@@ -155,7 +155,7 @@ if __name__ == "__main__":
         root_dir="../../data",
         show_residuals=True,
         output_dir="../../results",
-        crystallinity_peaks=[1, 2, 3, 4, 5, 6, 7],
+        crystallinity_peaks=[1, 2, 3, 4, 5, 6],
     )
 
     plot_drift(output_dir="../../results")
@@ -163,7 +163,7 @@ if __name__ == "__main__":
     batch_crystallinity_series(
         root_dir="../../data",
         output_dir="../../results",
-        max_peaks=7,
+        max_peaks=6,
     )
     
     plot_peak_metrics_vs_crystallinity("../../results")

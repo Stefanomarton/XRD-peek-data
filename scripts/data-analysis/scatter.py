@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Peak-metric vs Crystallinity  (2×4 grid, 8 colours)
 # ------------------------------------------------------------------
 
-def plot_peak_metrics_vs_crystallinity(folder, summary_csv="crystallinity_summary_7.csv"):
+def plot_peak_metrics_vs_crystallinity(folder, summary_csv="crystallinity_summary_6.csv"):
     cpath = os.path.join(folder, summary_csv)
     if not os.path.exists(cpath):
         print(f"[peak-metrics] Missing {cpath}")
